@@ -133,17 +133,3 @@ python validar_y_visualizar.py
 ```
 
 El script carga el OWL, verifica cantidades y datos, ejecuta HermiT, consulta casos y reproduce las imágenes. Se detiene si alguna comprobación falla. Para abrir la ontología en Protégé no necesitas ejecutar Python.
-
-## 9. Estado de los requisitos de la actividad
-
-| Requisito | Estado |
-|---|---|
-| Dominio seleccionado | Soporte técnico de TI. |
-| Mínimo cinco clases y cinco relaciones | 6 clases principales, 4 subclases y 7 Object Properties. |
-| Data Properties y jerarquías | 10 propiedades y 4 relaciones de subclase. |
-| Coherencia lógica | Comprobada con HermiT fuera de Protégé. |
-| Archivo OWL | Generado en RDF/XML y validado. |
-| Trabajo y revisión en Protégé | Pendiente de realizar en el equipo del estudiante. |
-| PNG exportado desde OntoGraf | Pendiente; los PNG actuales son visualizaciones auxiliares de Python. |
-
-Para completar el requisito de herramienta, seguir `GUIA_PROTEGE.md`, guardar el OWL desde Protégé y agregar `grafo_ontograf.png` al repo. No se debe presentar una imagen de Python como si hubiera sido exportada por OntoGraf.
