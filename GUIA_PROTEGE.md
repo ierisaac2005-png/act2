@@ -29,13 +29,3 @@ El OWL ya contiene el diseño y los casos. Estos pasos permiten revisarlo en la 
 
 La imagen debe mostrar conceptos, relaciones y estructura general. Una captura de la lista de clases por sí sola no cumple ese objetivo. Si la vista combinada queda demasiado cargada, exportar un esquema de clases y otra vista de individuos.
 
-## Guardar el modelo y subir al repo nuevo
-
-1. Guardar desde **File → Save as**, manteniendo el nombre `softtek_soporte_ti.owl` y seleccionando RDF/XML si se solicita un formato.
-2. Conservar el espacio de nombres y no reemplazarlo por el enlace de un repositorio inexistente.
-3. Subir el OWL guardado y `grafo_ontograf.png` junto con el README y los demás archivos de esta actividad, en un repositorio independiente.
-4. Agregar al README `![Visualización en Protégé](grafo_ontograf.png)` y actualizar la tabla de requisitos solo después de realizar esos pasos.
-
-No hace falta un botón de Colab para revisar esta entrega: la herramienta principal solicitada es Protégé Desktop. El script de Python es una comprobación adicional.
-
-Documentación de la herramienta: https://github.com/protegeproject/ontograf y https://protegewiki.stanford.edu/wiki/OntoGraf
