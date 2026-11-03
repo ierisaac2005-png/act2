@@ -5,7 +5,6 @@
 **Dominio:** Soporte técnico de TI  
 **Caso de referencia:** Softtek
 
-Esta actividad es independiente del análisis del ciclo de vida del conocimiento. Mantiene la misma empresa como referencia, pero ahora representa conceptos, relaciones y casos mediante una ontología. Todos los técnicos, sistemas, documentos e incidentes incluidos son ficticios. No se presentan como información interna de Softtek.
 
 ## Idea principal
 
