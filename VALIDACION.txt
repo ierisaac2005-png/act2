@@ -1,0 +1,20 @@
+VALIDACIÓN REAL DEL MODELO — caso académico Softtek
+Generación y razonamiento fuera de Protégé; no es evidencia de OntoGraf.
+Python: 3.12.14
+rdflib: 7.6.0
+owlready2: 0.51
+matplotlib: 3.10.8
+Clases: 10
+Object Properties: 7
+Data Properties: 10
+Individuos: 15
+Jerarquías: 4 relaciones de subclase.
+Dominios/rangos y datos de los tres incidentes: correctos.
+HermiT: ontología consistente; ninguna clase insatisfacible.
+Inferencia comprobada: PortalClientes es Sistema por Aplicacion.
+Inferencia comprobada: ProcedimientoAcceso es Documento por Procedimiento.
+Consulta SPARQL (reutilización por sistema compartido):
+nuevo | sistema | anterior | documento | tecnico
+INC003 | PortalClientes | INC001 | ProcedimientoAcceso | AnaTorres
+Interpretación: documento candidato para INC003, no resolución automática.
+Protégé y exportación OntoGraf: PENDIENTES en el equipo del estudiante.

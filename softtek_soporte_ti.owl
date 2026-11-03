@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:sti="https://example.org/softtek-academico/soporte-ti#"
+>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#Infraestructura">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://example.org/softtek-academico/soporte-ti#Area"/>
+    <rdfs:label xml:lang="es">Infraestructura</rdfs:label>
+    <sti:nombreArea rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infraestructura</sti:nombreArea>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#Tecnico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Tecnico</rdfs:label>
+    <rdfs:comment xml:lang="es">Persona que participa en la atención de incidentes de TI.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#Documento">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Documento</rdfs:label>
+    <rdfs:comment xml:lang="es">Contenido explícito reutilizable para atender incidentes.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#ProcedimientoBackup">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://example.org/softtek-academico/soporte-ti#Procedimiento"/>
+    <rdfs:label xml:lang="es">ProcedimientoBackup</rdfs:label>
+    <sti:documenta rdf:resource="https://example.org/softtek-academico/soporte-ti#INC002"/>
+    <sti:describe rdf:resource="https://example.org/softtek-academico/soporte-ti#ServicioBackups"/>
+    <sti:versionDocumento rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</sti:versionDocumento>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#ManualPortal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://example.org/softtek-academico/soporte-ti#Manual"/>
+    <rdfs:label xml:lang="es">ManualPortal</rdfs:label>
+    <sti:describe rdf:resource="https://example.org/softtek-academico/soporte-ti#PortalClientes"/>
+    <sti:versionDocumento rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.1</sti:versionDocumento>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#MesaServicio">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://example.org/softtek-academico/soporte-ti#Area"/>
+    <rdfs:label xml:lang="es">MesaServicio</rdfs:label>
+    <sti:nombreArea rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mesa de servicio</sti:nombreArea>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#codigoIncidente">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/softtek-academico/soporte-ti#Incidente"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="es">codigoIncidente</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#tipoHerramienta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/softtek-academico/soporte-ti#Herramienta"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="es">tipoHerramienta</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N658c331ae79e4430a07e98c791b97582">
+    <rdf:first rdf:resource="https://example.org/softtek-academico/soporte-ti#Herramienta"/>
+    <rdf:rest rdf:nodeID="N548dcb9e177742f59edee90cff0c50f3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na43f1b9e8a514f1786eeffa96f50f8f5">
+    <rdf:first rdf:resource="https://example.org/softtek-academico/soporte-ti#Sistema"/>
+    <rdf:rest rdf:nodeID="N41e511255bee47fabfe9805cece62af2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#nombreArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/softtek-academico/soporte-ti#Area"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="es">nombreArea</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#INC003">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://example.org/softtek-academico/soporte-ti#Incidente"/>
+    <rdfs:label xml:lang="es">INC003</rdfs:label>
+    <sti:afecta rdf:resource="https://example.org/softtek-academico/soporte-ti#PortalClientes"/>
+    <sti:codigoIncidente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INC-003</sti:codigoIncidente>
+    <sti:nivelPrioridad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</sti:nivelPrioridad>
+    <sti:fechaApertura rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-10-21T11:00:00</sti:fechaApertura>
+    <sti:estado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abierto</sti:estado>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#documenta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/softtek-academico/soporte-ti#Documento"/>
+    <rdfs:range rdf:resource="https://example.org/softtek-academico/soporte-ti#Incidente"/>
+    <rdfs:label xml:lang="es">documenta</rdfs:label>
+    <rdfs:comment xml:lang="es">Documento que registra la solución o el tratamiento de un caso.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#Aplicacion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Aplicacion</rdfs:label>
+    <rdfs:comment xml:lang="es">Sistema de software que proporciona una función de negocio.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://example.org/softtek-academico/soporte-ti#Sistema"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#Manual">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Manual</rdfs:label>
+    <rdfs:comment xml:lang="es">Documento de consulta general de un sistema o actividad.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://example.org/softtek-academico/soporte-ti#Documento"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#Servidor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Servidor</rdfs:label>
+    <rdfs:comment xml:lang="es">Sistema que proporciona recursos para ejecutar aplicaciones.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://example.org/softtek-academico/soporte-ti#Sistema"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#dependeDe">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/softtek-academico/soporte-ti#Sistema"/>
+    <rdfs:range rdf:resource="https://example.org/softtek-academico/soporte-ti#Sistema"/>
+    <rdfs:label xml:lang="es">dependeDe</rdfs:label>
+    <rdfs:comment xml:lang="es">Dependencia directa entre sistemas; no se declara transitiva.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#ProcedimientoAcceso">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://example.org/softtek-academico/soporte-ti#Procedimiento"/>
+    <rdfs:label xml:lang="es">ProcedimientoAcceso</rdfs:label>
+    <sti:documenta rdf:resource="https://example.org/softtek-academico/soporte-ti#INC001"/>
+    <sti:describe rdf:resource="https://example.org/softtek-academico/soporte-ti#PortalClientes"/>
+    <sti:versionDocumento rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</sti:versionDocumento>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#ServicioBackups">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://example.org/softtek-academico/soporte-ti#Aplicacion"/>
+    <rdfs:label xml:lang="es">ServicioBackups</rdfs:label>
+    <sti:dependeDe rdf:resource="https://example.org/softtek-academico/soporte-ti#ServidorAplicaciones"/>
+    <sti:versionSistema rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.0</sti:versionSistema>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#especialidad">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/softtek-academico/soporte-ti#Tecnico"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="es">especialidad</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#AnaTorres">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://example.org/softtek-academico/soporte-ti#Tecnico"/>
+    <rdfs:label xml:lang="es">AnaTorres</rdfs:label>
+    <sti:resuelve rdf:resource="https://example.org/softtek-academico/soporte-ti#INC001"/>
+    <sti:utiliza rdf:resource="https://example.org/softtek-academico/soporte-ti#ConsolaIdentidad"/>
+    <sti:perteneceA rdf:resource="https://example.org/softtek-academico/soporte-ti#MesaServicio"/>
+    <sti:nombreTecnico rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ana Torres</sti:nombreTecnico>
+    <sti:especialidad rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identidad y acceso</sti:especialidad>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#PortalClientes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://example.org/softtek-academico/soporte-ti#Aplicacion"/>
+    <rdfs:label xml:lang="es">PortalClientes</rdfs:label>
+    <sti:dependeDe rdf:resource="https://example.org/softtek-academico/soporte-ti#ServidorAplicaciones"/>
+    <sti:versionSistema rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.1</sti:versionSistema>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#afecta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/softtek-academico/soporte-ti#Incidente"/>
+    <rdfs:range rdf:resource="https://example.org/softtek-academico/soporte-ti#Sistema"/>
+    <rdfs:label xml:lang="es">afecta</rdfs:label>
+    <rdfs:comment xml:lang="es">Sistema afectado por un incidente.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#perteneceA">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/softtek-academico/soporte-ti#Tecnico"/>
+    <rdfs:range rdf:resource="https://example.org/softtek-academico/soporte-ti#Area"/>
+    <rdfs:label xml:lang="es">perteneceA</rdfs:label>
+    <rdfs:comment xml:lang="es">Área organizacional del técnico.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#versionDocumento">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/softtek-academico/soporte-ti#Documento"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="es">versionDocumento</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#ServidorAplicaciones">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://example.org/softtek-academico/soporte-ti#Servidor"/>
+    <rdfs:label xml:lang="es">ServidorAplicaciones</rdfs:label>
+    <sti:versionSistema rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</sti:versionSistema>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N804cce7c6a7540bbbe01ad5a5b49cae3">
+    <rdf:first rdf:resource="https://example.org/softtek-academico/soporte-ti#Tecnico"/>
+    <rdf:rest rdf:nodeID="N658c331ae79e4430a07e98c791b97582"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#nivelPrioridad">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/softtek-academico/soporte-ti#Incidente"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="es">nivelPrioridad</rdfs:label>
+    <rdfs:comment xml:lang="es">Convención del conjunto: 1 crítica, 2 alta, 3 media, 4 baja. El script comprueba el intervalo; el rango OWL es integer.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#INC002">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://example.org/softtek-academico/soporte-ti#Incidente"/>
+    <rdfs:label xml:lang="es">INC002</rdfs:label>
+    <sti:afecta rdf:resource="https://example.org/softtek-academico/soporte-ti#ServicioBackups"/>
+    <sti:codigoIncidente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INC-002</sti:codigoIncidente>
+    <sti:nivelPrioridad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sti:nivelPrioridad>
+    <sti:fechaApertura rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-10-20T10:00:00</sti:fechaApertura>
+    <sti:estado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resuelto</sti:estado>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#estado">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/softtek-academico/soporte-ti#Incidente"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="es">estado</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#Incidente">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Incidente</rdfs:label>
+    <rdfs:comment xml:lang="es">Interrupción o degradación registrada de un servicio de TI.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N548dcb9e177742f59edee90cff0c50f3">
+    <rdf:first rdf:resource="https://example.org/softtek-academico/soporte-ti#Documento"/>
+    <rdf:rest rdf:nodeID="Na017a8f87a2e4564850ca61cbf891034"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#describe">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/softtek-academico/soporte-ti#Documento"/>
+    <rdfs:range rdf:resource="https://example.org/softtek-academico/soporte-ti#Sistema"/>
+    <rdfs:label xml:lang="es">describe</rdfs:label>
+    <rdfs:comment xml:lang="es">Sistema al que se refiere un documento.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label xml:lang="es">Soporte TI — caso académico inspirado en Softtek</rdfs:label>
+    <rdfs:comment xml:lang="es">Modelo independiente de la actividad del ciclo de vida. Personas, casos y sistemas ficticios; no describe procesos internos verificados de Softtek. Generado en RDF/XML para abrirse y editarse en Protégé.</rdfs:comment>
+    <owl:versionInfo>1.0</owl:versionInfo>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#LuisGarcia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://example.org/softtek-academico/soporte-ti#Tecnico"/>
+    <rdfs:label xml:lang="es">LuisGarcia</rdfs:label>
+    <sti:resuelve rdf:resource="https://example.org/softtek-academico/soporte-ti#INC002"/>
+    <sti:utiliza rdf:resource="https://example.org/softtek-academico/soporte-ti#MonitorBackups"/>
+    <sti:perteneceA rdf:resource="https://example.org/softtek-academico/soporte-ti#Infraestructura"/>
+    <sti:nombreTecnico rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luis García</sti:nombreTecnico>
+    <sti:especialidad rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Respaldos</sti:especialidad>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#INC001">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://example.org/softtek-academico/soporte-ti#Incidente"/>
+    <rdfs:label xml:lang="es">INC001</rdfs:label>
+    <sti:afecta rdf:resource="https://example.org/softtek-academico/soporte-ti#PortalClientes"/>
+    <sti:codigoIncidente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INC-001</sti:codigoIncidente>
+    <sti:nivelPrioridad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</sti:nivelPrioridad>
+    <sti:fechaApertura rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-10-20T09:00:00</sti:fechaApertura>
+    <sti:estado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resuelto</sti:estado>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na017a8f87a2e4564850ca61cbf891034">
+    <rdf:first rdf:resource="https://example.org/softtek-academico/soporte-ti#Area"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#ConsolaIdentidad">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://example.org/softtek-academico/soporte-ti#Herramienta"/>
+    <rdfs:label xml:lang="es">ConsolaIdentidad</rdfs:label>
+    <sti:tipoHerramienta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Administración de identidades</sti:tipoHerramienta>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#Area">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Area</rdfs:label>
+    <rdfs:comment xml:lang="es">Unidad organizacional a la que pertenece un técnico.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#utiliza">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/softtek-academico/soporte-ti#Tecnico"/>
+    <rdfs:range rdf:resource="https://example.org/softtek-academico/soporte-ti#Herramienta"/>
+    <rdfs:label xml:lang="es">utiliza</rdfs:label>
+    <rdfs:comment xml:lang="es">Herramienta utilizada por el técnico.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#nombreTecnico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/softtek-academico/soporte-ti#Tecnico"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="es">nombreTecnico</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#fechaApertura">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/softtek-academico/soporte-ti#Incidente"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:label xml:lang="es">fechaApertura</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#Procedimiento">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Procedimiento</rdfs:label>
+    <rdfs:comment xml:lang="es">Documento con pasos ordenados para realizar una tarea.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://example.org/softtek-academico/soporte-ti#Documento"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#versionSistema">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/softtek-academico/soporte-ti#Sistema"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="es">versionSistema</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#Sistema">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Sistema</rdfs:label>
+    <rdfs:comment xml:lang="es">Recurso tecnológico al que puede afectar un incidente.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncf4df2ec20ec4bc995d1831f6e93ca83">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+    <owl:members rdf:nodeID="Na43f1b9e8a514f1786eeffa96f50f8f5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#resuelve">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/softtek-academico/soporte-ti#Tecnico"/>
+    <rdfs:range rdf:resource="https://example.org/softtek-academico/soporte-ti#Incidente"/>
+    <rdfs:label xml:lang="es">resuelve</rdfs:label>
+    <rdfs:comment xml:lang="es">Indica una resolución realizada, no una simple asignación.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#Herramienta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Herramienta</rdfs:label>
+    <rdfs:comment xml:lang="es">Recurso de diagnóstico o intervención utilizado por un técnico.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/softtek-academico/soporte-ti#MonitorBackups">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://example.org/softtek-academico/soporte-ti#Herramienta"/>
+    <rdfs:label xml:lang="es">MonitorBackups</rdfs:label>
+    <sti:tipoHerramienta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoreo de respaldos</sti:tipoHerramienta>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N41e511255bee47fabfe9805cece62af2">
+    <rdf:first rdf:resource="https://example.org/softtek-academico/soporte-ti#Incidente"/>
+    <rdf:rest rdf:nodeID="N804cce7c6a7540bbbe01ad5a5b49cae3"/>
+  </rdf:Description>
+</rdf:RDF>
